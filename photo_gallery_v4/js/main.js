@@ -1,47 +1,4 @@
-/*
 
-const list = document.querySelector('#photo-list div');
-
-const searchBar = document.forms['search-box'].querySelector('input');
-searchBar.addEventListener('keyup', function (e) {
-    const term = e.target.value.toLowerCase();
-    const photos = list.getElementsByTagName('span');
-    Array.from(photos).forEach(function (photo) {
-        const title = photo.firstElementChild.textContent;
-
-        if (title.toLowerCase().indexOf(term) != -1) {
-            photo.style.display = 'block';
-        } else {
-            photo.style.display = 'none';
-        }
-    })
-})
-*/
-
-/*
-function myFunction() {
-    // Declare variables 
-    var input, filter, table, tr, td, i, txtValue;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    table = document.getElementById("myTable");
-    tr = table.getElementsByTagName("tr");
-
-    // Loop through all table rows, and hide those who don't match the search query
-    for (i = 0; i < tr.length; i++) {
-        td = tr[i].getElementsByTagName("td")[0];
-        if (td) {
-            txtValue = td.textContent || td.innerText;
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                tr[i].style.display = "";
-            } else {
-                tr[i].style.display = "none";
-            }
-        }
-    }
-}
-*/
-// Code below is just a javascript object literal that contains property names and property values 
 
 $(document).ready(function () {
     $('.light-box').magnificPopup({

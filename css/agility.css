@@ -1,4 +1,8 @@
 
+* {
+    box-sizing: border-box;
+  }
+
 body {
     font: 20px Montserrat, sans-serif;
     line-height: 1.8;
@@ -44,3 +48,13 @@ p {
     padding-top: 70px;
     padding-bottom: 70px;
 }
+
+footer ul{
+    list-style: none;
+    margin: 0 2px;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  

@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Flexbox</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Raleway" rel="stylesheet">
+  <link rel="stylesheet" type="text/css"
+    href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,300,800,700,400italic%7CPT+Serif:400,400italic%7CBree+Serif">
+  <!--<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Raleway" rel="stylesheet">-->
   <link href="css/page.css" rel="stylesheet">
   <link href="css/layout.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -14,7 +16,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/navMainPage.css">
 </head>
 
 <body>
@@ -23,27 +25,29 @@
 
     <header class="main-header">
       <a class="site-logo" href="/">
-        <img src="css/img/NicePng_house-icon-png_117319.png" alt="Poly - UI Toolkit">
+        <img src="css/img/articFox.jpg" alt="Poly - UI Toolkit">
       </a>
+
 
       <ul class="nav">
 
-        <li><a href="Proj Two Front End/index.html">Responsive Site</a></li>
-        <li><a href="photo_gallery_v4/index.html">LightBox/JQuery</a></li>
-        <li><a href="Proj Three Front End/index.html">HTML Form</a></li>
-        <li><a href="game_show_app_v1/index.html">JavaScript</a></li>
-        <li><a href="main.html">My Dog App</a></li>
-        <li><a href="agility.html">About the Agility Game</a></li>
-        </a>
+        <li><a href="#chartJS">Chart JS</a></li>
+        <li><a href="#lightBox">LightBox/JQuery</a></li>
+        <li><a href="#gameApp">Game App</a></li>
+        <li><a href="#machApp">MACH App</a></li>
+        <li><a href="#htmlForm">HTML Form</a></li>
+        <li><a href="#apiRequest">API Request</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
       </ul>
     </header>
 
     <div class="banner">
       <div class="banner-text">
-        <h1>Team Billy</h1>
+        <h1>TACHYON TECH TERESE</h1>
         <br>
-        <h3>Three AKC Champs!</h3>
-        <h6>Texas Eskimos with lots of Drive!</h6>
+        <h3>Twenty Plus Years - Tech Writer</h3>
+        <h6>With Web Development Skills!</h6>
       </div>
     </div>
 
@@ -54,50 +58,55 @@
     <div class="main-content">
 
 
-      <div class="card">
-        <img src="images/margee.jpg" alt="Margee" height="150" width="150">
-        <h1>Margee</h1>
-        <ul id="outputMargee"></ul>
-        <a class="btn btnMargee" id="margeePoints" href="#">See Points</a>
+      <div class="card" id="chartJS">
+        <a href="dashBoard/index.html"><img src="images/chartJS.jpg" alt="ChartJS" height="250" width="250"></a>
+        <h1>Chart JS</h1>
+        <ul id="outputChart"></ul>
+        <a class="btn btnChart" id="chartPoints" href="#">Project Details</a>
       </div>
 
-      <div class="card">
-        <img src="images/elliePlay.png" alt="ellie" height="150" width="150">
-        <h1>Miss Ellie</h1>
-        <ul id="outputEllie"></ul>
-        <a class="btn btnEllie" id="elliePoints" href="#">See Points</a><br>
+      <div class="card" id="lightBox">
+        <a href="photo_gallery_v4/index.html"><img src="images/photoGal.jpg" alt="photo gallery" height="250"
+            width="250"></a>
+        <h1>Lightbox</h1>
+        <ul id="outputLight"></ul>
+        <a class="btn btnLight" id="lightPoints" href="#">Project Details</a><br>
       </div>
 
-      <div class="card">
-        <img src="images/jack.jpg" alt="jack" height="150" width="150">
-        <h1>Jack</h1>
-        <ul id="outputJack"></ul>
-        <a class="btn btnJack" id="jackPoints" href="#">See Points</a>
+      <div class="card" id="gameApp">
+        <a href="game_show_app_v1/index.html"><img src="images/wsuccess.jpg" alt="game application" height="250"
+            width="260"></a>
+        <h1>Game App</h1>
+        <ul id="outputGame"></ul>
+        <a class="btn btnGame" id="gamePoints" href="#">Project Details</a>
       </div>
 
-      <div class="card">
-        <img src="images/billybird.png" alt="Billy" height="140" width="200">
-        <h1>Billy</h1>
-        <ul id="outputBilly"></ul>
-        <a class="btn btnBilly" id="billyPoints" href="#">See Points</a>
+      <div class="card" id="machApp">
+        <a href="agility.html"><img src="images/Flexbox.jpg" alt="Kate" height="250" width="250"></a>
+        <h1>MACH App</h1>
+        <ul id="outputMach"></ul>
+        <a class="btn btnMach" id="machPoints" href="#">Project Details</a>
       </div>
 
-      <div class="card">
-        <img src="images/pistolPete.png" alt="pete" height="150" width="150">
-        <h1>Pistol Pete</h1>
-        <ul id="outputPete"></ul>
-        <a class="btn btnPete" id="petePoints" href="#">See Points</a>
+      <div class="card" id="htmlForm">
+        <a href="Proj_Three_Front_End/index.html"><img src="images/form.jpg" alt="pete" height="250" width="200"></a>
+        <h1>HTML Form</h1>
+        <ul id="outputHtml"></ul>
+        <a class="btn btnHtml" id="htmlPoints" href="#">Project Details</a>
       </div>
 
-      <div class="card">
-        <img src="images/katidid.png" alt="Kate" height="150" width="170">
-        <h1>Katidid</h1>
-        <ul id="outputKate"></ul>
-        <a class="btn btnKate" id="katePoints" href="#">See Points</a>
+      <div class="card" id="apiRequest">
+        <a href="Fetch/index.html"><img src="images/apiRequest.jpg" alt="Billy" height="250" width="260"></a>
+        <h1>API Request</h1>
+        <ul id="outputApi"></ul>
+        <a class="btn btnApi" id="apiPoints" href="#">Project Details</a>
       </div>
+
     </div>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/app.js"></script>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/capstone.js"></script>
 
 </body>
 
